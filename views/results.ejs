@@ -1,2 +1,16 @@
 <% // Render your search results here %>
+
+<h2>Search Results for <%= input %></h2>
+
+<% movie.forEach(movie => { %>
+    <div>
+        <h3><%= movie.name %></h3>
+
+        <p>Rating: <%= movie.rating %> </p>
+        
+        <p>Release Year: <%= movie.year %></p>
+    </div>
+<% }) %>
+
+
 <% // This is how to do comments in EJS, by the way... %>
